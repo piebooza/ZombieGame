@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\background.xnb</Output>
+      <Output>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\background.xnb</Output>
       <Time>2016-11-27T11:20:04-08:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Characters.xnb</Output>
+      <Output>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Characters.xnb</Output>
       <Time>2016-11-20T12:12:50-08:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Target_Cursor.xnb</Output>
+      <Output>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Target_Cursor.xnb</Output>
       <Time>2016-11-27T12:09:24-08:00</Time>
     </Item>
     <Item>
@@ -34,17 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\bullet.xnb</Output>
+      <Output>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\bullet.xnb</Output>
       <Time>2017-01-15T12:26:32.7690328-08:00</Time>
-    </Item>
-    <Item>
-      <Source>SpriteFont1.spritefont</Source>
-      <Name>SpriteFont1</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
-      <Time>2017-02-05T11:40:40.5423196-08:00</Time>
     </Item>
     <Item>
       <Source>back2.png</Source>
@@ -52,8 +43,26 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\back2.xnb</Output>
+      <Output>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\back2.xnb</Output>
       <Time>2017-02-12T11:06:04.3493547-08:00</Time>
+    </Item>
+    <Item>
+      <Source>deathscreen.jpg</Source>
+      <Name>deathscreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\deathscreen.xnb</Output>
+      <Time>2017-02-12T11:24:35.7542368-08:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFont1.spritefont</Source>
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
+      <Time>2017-02-05T11:40:40.5423196-08:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -62,10 +71,10 @@
       <TargetProfile>Reach</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1Content\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

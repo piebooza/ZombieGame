@@ -22,7 +22,7 @@ namespace WindowsGame1
         public bool isshooting = false;
         TimeSpan shootDelayTime = TimeSpan.FromMilliseconds(20);
         TimeSpan shootDelayTimer = TimeSpan.Zero;
-
+        
         Dictionary<AnimationState, Rectangle[]> animation = new Dictionary<AnimationState, Rectangle[]>();
         AnimationState Gun;
 
@@ -36,14 +36,15 @@ namespace WindowsGame1
             Rectangle[] pistol = { new Rectangle(0, 4, 38, 29), new Rectangle(0, 43, 39, 29) };
             Rectangle[] uzi = { new Rectangle(78, 4, 39, 31), new Rectangle(73, 43, 39, 31) };
             Rectangle[] shotgun = { new Rectangle(156, 4, 39, 31), new Rectangle(156, 43, 39, 31) };
+            
             animation.Add(AnimationState.pistol, pistol);
             animation.Add(AnimationState.uzi, uzi);
             animation.Add(AnimationState.shotgun, shotgun);
 
 
             Rotation = rotation;
-            Rect = animation[gun][0];
-            Origin = new Vector2(Rect.Width / 2, Rect.Height / 2);
+            Frame = animation[gun][0];
+            Origin = new Vector2(Frame.Width / 2, Frame.Height / 2);
         }
 
         public Player(Vector2 pos, Texture2D image, Color tint, Vector2 scale)
@@ -75,7 +76,7 @@ namespace WindowsGame1
 
             if (isshooting)
             {
-                Rect = animation[Gun][1];
+                Frame = animation[Gun][1];
 
                 shootDelayTimer += gameTime.ElapsedGameTime;
                 if (shootDelayTimer >= shootDelayTime)
@@ -99,22 +100,22 @@ namespace WindowsGame1
             }
             else
             {
-                Rect = animation[Gun][0];
+                Frame = animation[Gun][0];
             }
 
-            if ((keyboard.IsKeyDown(Keys.W) || keyboard.IsKeyDown(Keys.Up)) && Pos.Y - Rect.Height / 2 > 0)
+            if ((keyboard.IsKeyDown(Keys.W) || keyboard.IsKeyDown(Keys.Up)) && Pos.Y - Frame.Height / 2 > 0)
             {
                 Pos.Y -= 2;
             }
-            if ((keyboard.IsKeyDown(Keys.A) || keyboard.IsKeyDown(Keys.Left)) && Pos.X - Rect.Width / 2 > 0)
+            if ((keyboard.IsKeyDown(Keys.A) || keyboard.IsKeyDown(Keys.Left)) && Pos.X - Frame.Width / 2 > 0)
             {
                 Pos.X -= 2;
             }
-            if ((keyboard.IsKeyDown(Keys.D) || keyboard.IsKeyDown(Keys.Right)) && Pos.X + Rect.Width / 2 < screen.Width)
+            if ((keyboard.IsKeyDown(Keys.D) || keyboard.IsKeyDown(Keys.Right)) && Pos.X + Frame.Width / 2 < screen.Width)
             {
                 Pos.X += 2;
             }
-            if ((keyboard.IsKeyDown(Keys.S) || keyboard.IsKeyDown(Keys.Down)) && Pos.Y + Rect.Height / 2 < screen.Height)
+            if ((keyboard.IsKeyDown(Keys.S) || keyboard.IsKeyDown(Keys.Down)) && Pos.Y + Frame.Height / 2 < screen.Height)
             {
                 Pos.Y += 2;
             }
@@ -128,8 +129,11 @@ namespace WindowsGame1
 
 
         }
-
-
+        
+        public Rectangle PlayerHitbox()
+        {
+            return new Rectangle((int)(Pos.X), (int)(Pos.Y), (int)(Image.Width* Scale.X), (int)(Image.Height * Scale.Y));
+        }
         public override void Draw(SpriteBatch spriteBatch)
         {
 

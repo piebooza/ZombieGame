@@ -58,3 +58,26 @@ C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\ob
 C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb
 C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\SpriteFont1.xnb
 C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\back2.xnb
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\background.xnb
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Characters.xnb
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\Target_Cursor.xnb
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\bullet.xnb
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\back2.xnb
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\deathscreen.xnb
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.exe
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\WindowsGame1.pdb
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Microsoft.Xna.Framework.dll
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Microsoft.Xna.Framework.Game.dll
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.dll
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.dll
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.dll
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Microsoft.Xna.Framework.xml
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Microsoft.Xna.Framework.Game.xml
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Microsoft.Xna.Framework.Graphics.xml
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Microsoft.Xna.Framework.GamerServices.xml
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Microsoft.Xna.Framework.Input.Touch.xml
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.csprojResolveAssemblyReference.cache
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.exe
+C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\obj\x86\Debug\WindowsGame1.pdb

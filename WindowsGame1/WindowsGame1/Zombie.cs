@@ -34,21 +34,21 @@ namespace WindowsGame1
             zombieAnimation.Add(ZombieState.Normal, normal);
             zombieAnimation.Add(ZombieState.Slow, slow);
 
-            Rect = zombieAnimation[state];
-            Origin = new Vector2(Rect.Width / 2, Rect.Height / 2);
+            Frame = zombieAnimation[state];
+            Origin = new Vector2(Frame.Width / 2, Frame.Height / 2);
         }
 
         public Zombie(Vector2 pos, Texture2D image, Color tint, Vector2 scale)
             : base(pos, image, tint, scale)
         {
             Rotation = 0;
-            Rect = new Rectangle(0, 0, image.Width, image.Height);
-            Origin = new Vector2(Rect.Width / 2, Rect.Height / 2);
+            Frame = new Rectangle(0, 0, image.Width, image.Height);
+            Origin = new Vector2(Frame.Width / 2, Frame.Height / 2);
         }
 
         public Rectangle ZombieHitbox()
         {
-            return new Rectangle((int)(Pos.X - Origin.X), (int)(Pos.Y - Origin.Y), (int)(Rect.Width * Scale.X), (int)(Rect.Height * Scale.Y));
+            return new Rectangle((int)(Pos.X - Origin.X), (int)(Pos.Y - Origin.Y), (int)(Frame.Width * Scale.X), (int)(Frame.Height * Scale.Y));
         }
 
     }

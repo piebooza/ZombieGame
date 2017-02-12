@@ -13,8 +13,7 @@ namespace WindowsGame1
 {
     public class Game1 : Microsoft.Xna.Framework.Game
     {
-        //Added github version control
-        //This is Mihir testing Bitbucket
+
         public enum ScreenState
         {
             Start,
@@ -171,6 +170,7 @@ namespace WindowsGame1
             player.Update(gameTime, keyboard, ms, lastMs, target, GraphicsDevice.Viewport);
             #endregion Game Logic
 
+            //if zombie intersects player
             if (currentScreen == ScreenState.Start)
             {
                 //TODO: add logic for start screen.
