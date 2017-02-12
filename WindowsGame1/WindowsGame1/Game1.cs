@@ -13,6 +13,8 @@ namespace WindowsGame1
 {
     public class Game1 : Microsoft.Xna.Framework.Game
     {
+        //Added github version control
+
         public enum ScreenState
         {
             Start,
