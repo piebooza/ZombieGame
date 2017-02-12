@@ -1,0 +1,3 @@
+c:\users\pierrebaza\documents\visual studio 2015\Projects\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\WindowsGame1Content.contentprojResolveAssemblyReference.cache
+\\GMRSHARED\Xfers\Students\Blue Class\Pierre Baza\WindowsGame1\WindowsGame1\WindowsGame1Content\obj\x86\Debug\WindowsGame1Content.contentprojResolveAssemblyReference.cache
+C:\Users\PierreBaza\Desktop\Zombie Follower Shooter\WindowsGame1\WindowsGame1Content\obj\x86\Debug\WindowsGame1Content.contentprojResolveAssemblyReference.cache

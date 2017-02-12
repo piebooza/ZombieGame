@@ -1,0 +1,6 @@
+Content\background.xnb
+Content\Characters.xnb
+Content\Target_Cursor.xnb
+Content\bullet.xnb
+Content\SpriteFont1.xnb
+Content\back2.xnb
