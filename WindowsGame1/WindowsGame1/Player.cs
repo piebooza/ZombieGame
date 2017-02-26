@@ -129,10 +129,11 @@ namespace WindowsGame1
 
 
         }
-        
+
         public Rectangle PlayerHitbox()
         {
-            return new Rectangle((int)(Pos.X), (int)(Pos.Y), (int)(Image.Width* Scale.X), (int)(Image.Height * Scale.Y));
+            return new Rectangle((int)(Pos.X-20), (int)(Pos.Y-10), (int)(Image.Width - 160), (int)(Image.Height - 80));
+
         }
         public override void Draw(SpriteBatch spriteBatch)
         {
@@ -141,7 +142,7 @@ namespace WindowsGame1
             {
                 bullet.Draw(spriteBatch);
             }
-
+            
             base.Draw(spriteBatch);
         }
     }

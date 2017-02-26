@@ -42,12 +42,14 @@ namespace WindowsGame1
         Random rand = new Random();
         MouseState ms;
         Random random = new Random();
-        SpriteFont KillcountText;
+        SpriteFont Text;
+        SpriteFont DeathText;
         List<int> Counter;
         int whichZombie;
         int points;
         int zombiespawntime = 1000;
-
+        Texture2D pixel;
+        
         TimeSpan zombieSpawn = TimeSpan.Zero;
         TimeSpan timer = TimeSpan.Zero;
 
@@ -78,13 +80,16 @@ namespace WindowsGame1
                 zombieY = rand.Next(-500, GraphicsDevice.Viewport.Height + 500);
             } while (GraphicsDevice.Viewport.Bounds.Contains(zombieX, zombieY));
 
+            pixel = new Texture2D(GraphicsDevice, 1, 1);
+            pixel.SetData<int>(new int[] { int.MaxValue });
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            KillcountText = Content.Load<SpriteFont>("SpriteFont1");
+            Text = Content.Load<SpriteFont>("SpriteFont1");
+            DeathText = Content.Load<SpriteFont>("SpriteFont2");
             Player.BulletImage = Content.Load<Texture2D>("bullet");
             target = new Sprite(new Vector2(0, 0), Content.Load<Texture2D>("Target_Cursor"), Color.Red, new Vector2(.07f, .07f));
             background = new Sprite(new Vector2(screen.X / 2, screen.Y / 2), Content.Load<Texture2D>("Back2"), Color.White, new Vector2(2.4f, 1.3f));
-            DeathScreen = new Sprite(new Vector2(0, 0), Content.Load<Texture2D>("deathscreen"), Color.White, new Vector2(1, 1));
+            DeathScreen = new Sprite(new Vector2(screen.X/2, screen.Y/2), Content.Load<Texture2D>("deathscreen"), Color.White, new Vector2(2, 1.1f));
             player = new Player(Player.AnimationState.pistol, new Vector2(screen.X / 2, screen.Y / 2), Content.Load<Texture2D>("Characters"), Color.White, new Vector2(1, 1), 0f);
             zombies.Add(new Zombie(Zombie.ZombieState.Normal, new Vector2(zombieX, zombieY), Content.Load<Texture2D>("Characters"), Color.White, new Vector2(1, 1), 0f));
 
@@ -165,15 +170,36 @@ namespace WindowsGame1
                 Vector2 diff3 = player.Pos - zombie.Pos;
                 diff3.Normalize();
                 zombie.Pos += diff3 * new Vector2(.05f, .05f) * (float)gameTime.ElapsedGameTime.TotalMilliseconds;
+
+                bool isHit = false;
+                foreach (Zombie z in zombies)
+                {
+                    if (z.ZombieHitbox().Intersects(player.PlayerHitbox()))
+                    {
+                        isHit = true;
+                        break;
+                    }
+                }
+
+                if (isHit)
+                {
+                    currentScreen = ScreenState.End;
+                }
+
+
             }
-
-            player.Update(gameTime, keyboard, ms, lastMs, target, GraphicsDevice.Viewport);
             #endregion Game Logic
+            player.Update(gameTime, keyboard, ms, lastMs, target, GraphicsDevice.Viewport);
 
-            //if zombie intersects player
+
+
             if (currentScreen == ScreenState.Start)
             {
                 //TODO: add logic for start screen.
+            }
+            if (currentScreen == ScreenState.End)
+            {
+
             }
 
 
@@ -191,17 +217,20 @@ namespace WindowsGame1
 
                 background.Draw(spriteBatch);
                 player.Draw(spriteBatch);
-
+                
 
                 foreach (Zombie zombie in zombies)
                 {
                     zombie.Draw(spriteBatch);
                 }
+               
 
+                spriteBatch.DrawString(Text, String.Format("Zombies Destroyed: {0}", killCount), new Vector2(600, 0), Color.Black);
+                spriteBatch.DrawString(Text, String.Format("Points: {0}", points), new Vector2(702, 20), Color.Black);
 
 
                 target.Draw(spriteBatch);
-             
+
             }
             else if (currentScreen == ScreenState.Start)
             {
@@ -211,15 +240,13 @@ namespace WindowsGame1
             else if (currentScreen == ScreenState.End)
             {
                 DeathScreen.Draw(spriteBatch);
+                spriteBatch.DrawString(DeathText, "You Died", new Vector2(screen.X / 2 - 64, screen.Y / 2- 20), Color.White);
             }
 
             else if (currentScreen == ScreenState.Pause)
             {
                 //TODO: add draw for pause screen.
             }
-
-            spriteBatch.DrawString(KillcountText, String.Format("Zombies Destroyed: {0}", killCount), new Vector2(550, 0), Color.Black);
-            spriteBatch.DrawString(KillcountText, String.Format("Points: {0}", points), new Vector2(671, 20), Color.Black);
 
             #endregion Game Draw
             spriteBatch.End();

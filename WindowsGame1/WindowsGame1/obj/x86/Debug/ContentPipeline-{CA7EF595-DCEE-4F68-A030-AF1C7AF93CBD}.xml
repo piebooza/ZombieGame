@@ -62,7 +62,16 @@
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
       <Output>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\SpriteFont1.xnb</Output>
-      <Time>2017-02-05T11:40:40.5423196-08:00</Time>
+      <Time>2017-02-19T12:08:34.9191785-08:00</Time>
+    </Item>
+    <Item>
+      <Source>SpriteFont2.spritefont</Source>
+      <Name>SpriteFont2</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\PierreBaza\Documents\Github\ZombieGame\WindowsGame1\WindowsGame1\bin\x86\Debug\Content\SpriteFont2.xnb</Output>
+      <Time>2017-02-19T12:08:30.6923844-08:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
